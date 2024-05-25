@@ -1,0 +1,33 @@
+.input-group {
+  max-width: 350px;
+  margin: auto;
+}
+
+.form-control {
+  background-color: #ECECEC !important;
+  border-top-right-radius: 20px !important;
+  border-bottom-right-radius: 20px !important;
+  border-color:#ECECEC !important;
+}
+
+.form-control:focus {
+  box-shadow: none !important;
+  background-color: #ECECEC !important;
+}
+
+.btn-outline-secondary {
+  background-color:#ECECEC !important;
+  border-color: #ECECEC !important; /* Important to override Bootstrap's default styles */
+  border-top-left-radius: 20px !important;
+  border-bottom-left-radius: 20px !important;
+}
+
+.btn-outline-secondary:hover {
+  background-color:#ECECEC;
+  border-color: #ECECEC !important; /* Important to override Bootstrap's default styles */
+}
+
+.btn-outline-secondary:focus {
+  box-shadow: none;
+  background-color: blue;
+}
