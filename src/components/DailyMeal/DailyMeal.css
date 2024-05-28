@@ -1,0 +1,56 @@
+.daily-meal-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #294C2B;
+  color: white;
+  padding: 20px 0px 20px 70px;
+
+  border-radius: 8px;
+  max-width: 600px;
+  margin: 20px auto;
+  max-height: 140px;
+}
+
+.daily-meal-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap:16px;
+}
+
+.meal-type{
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.food-name{
+
+}
+
+.calorie-count{
+
+}
+
+
+  .add-button button {
+    background-color: #EF723D; /* Green background */
+    color: white; /* White text */
+    border: none; /* Remove border */
+    padding: 10px 20px; /* Add some padding */
+    text-align: center; /* Center text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Get block level display */
+    font-size: 16px; /* Increase font size */
+    cursor: pointer; /* Add a pointer cursor on hover */
+    border-radius: 8px; /* Rounded corners */
+  }
+  
+  .add-button button:hover {
+    background-color: #D6632B; /* Darker green on hover */
+  }
+
+.daily-meal-image img {
+  max-width: 170px;
+  border-radius: 100%;
+}
