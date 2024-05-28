@@ -49,6 +49,24 @@
 }
 
 .heart-icon {
+  width: 20px;
+  height: 10px;
+  margin-left: 20px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.heart-icon-outline {
+  fill: none;
+  stroke: black;
+  stroke-width: 2px;
+}
+
+.heart-icon-full {
+  fill: red;
+}
+
+/* .heart-icon {
   font-size: 18px;
   margin-left: 20px;
   margin-top: 10px;
@@ -58,4 +76,4 @@
 
 .heart-icon:hover {
   color: red;
-}
+} */
