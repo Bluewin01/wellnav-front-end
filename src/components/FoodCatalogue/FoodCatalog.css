@@ -1,0 +1,61 @@
+.Food-Catalog {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding-left: 50px;
+}
+.Food-Column {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  flex-basis: calc(20% - 75px);
+  box-sizing: border-box;
+}
+.Food-Recommendation {
+  text-align: left;
+  margin-bottom: 10px;
+  flex-direction: column;
+  align-items: left;
+  padding-bottom: 30px;
+  background-color: #f0dd98;
+  border-radius: 10px;
+  box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.1);
+}
+.Food-Recommendation p {
+  margin: 0px 0;
+  margin-top: 10px;
+  text-align: left;
+}
+.item-info {
+  text-align: center;
+}
+
+.Salad-img {
+  width: 100%;
+  max-width: 180px;
+  height: auto;
+  object-fit: cover;
+}
+.item-name {
+  padding-left: 20px;
+  font-weight: bold;
+  color: #294c2b;
+}
+
+.item-detail {
+  padding-left: 20px;
+  color: #666666;
+  margin-bottom: 5px;
+}
+
+.heart-icon {
+  font-size: 18px;
+  margin-left: 20px;
+  margin-top: 10px;
+  color: black;
+  cursor: pointer;
+}
+
+.heart-icon:hover {
+  color: red;
+}
