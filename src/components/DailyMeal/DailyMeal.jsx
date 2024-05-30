@@ -1,14 +1,14 @@
 import React from "react";
 import "./DailyMeal.css";
-import exampleImage from "../../assets/images/Scrambled Egg with Tofu.webp";
+import exampleImage from "../../Assets/Salad.png";
 
-const DailyMeal = () => {
+const DailyMeal = ({ mealType }) => {
   return (
     <div className="daily-meal-container">
       <div className="daily-meal-info">
-        <div className="meal-type">Breakfast</div>
+        <div className="meal-type">{mealType}</div>
         <div className="add-button">
-          <button>Add</button>
+          <button>Tambah</button>
         </div>
       </div>
       <div className="daily-meal-image">

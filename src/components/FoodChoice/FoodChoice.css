@@ -49,23 +49,3 @@
     background-color: #D6632B;
   }
   
-  .favorite{
-    display: flex;
-    /* flex-direction: row; */
-    align-items: center;
-  }
-  .favorite-button {
-    background-color: transparent;
-  color: #EF723D;
-  border: none;
-  cursor: pointer;
-  font-size: 24px;
-  }
-  
-  .favorite-button.active {
-    color: red;
-  }
-  
-  .favorite-button:focus {
-    outline: none;
-  }
