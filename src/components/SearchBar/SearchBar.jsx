@@ -15,7 +15,7 @@ const SearchBar = () => {
   };
 
   return (
-    <div className="input-group mb-3 search-bar">
+    <div className="input-group search-bar">
       <button
         className="btn btn-outline-secondary"
         type="button"
