@@ -2,32 +2,64 @@
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  padding-left: 50px;
+  margin-left: 8vh;
+  /* padding-left: 60px; */
 }
 .Food-Column {
   display: flex;
   flex-direction: column;
-  width: 20%;
+
+  width: 100%;
   flex-basis: calc(20% - 75px);
   box-sizing: border-box;
 }
 .Food-Recommendation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #f0dd98;
   text-align: left;
+}
+
+.Food-Recommendation img.Salad-img {
+  max-width: 180px;
+  height: auto;
+  object-fit: cover;
+}
+
+.item-name,
+.item-detail {
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.item-name {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.item-detail {
+  font-size: 14px;
+  color: #666;
+}
+
+/* .Food-Recommendation {
+  display: flex;
+  align-items: left;
   margin-bottom: 10px;
   flex-direction: column;
-  align-items: left;
   padding-bottom: 30px;
   background-color: #f0dd98;
   border-radius: 10px;
   box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.1);
 }
 .Food-Recommendation p {
-  margin: 0px 0;
+  margin: 0;
   margin-top: 10px;
   text-align: left;
-}
-.item-info {
-  text-align: center;
 }
 
 .Salad-img {
@@ -37,22 +69,23 @@
   object-fit: cover;
 }
 .item-name {
-  padding-left: 20px;
+  margin: 0;
   font-weight: bold;
   color: #294c2b;
 }
 
 .item-detail {
-  padding-left: 20px;
+  margin: 0;
   color: #666666;
   margin-bottom: 5px;
-}
+} */
 
 .heart-icon {
   width: 20px;
   height: 10px;
   margin-left: 20px;
-  margin-top: 10px;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
   cursor: pointer;
 }
 
