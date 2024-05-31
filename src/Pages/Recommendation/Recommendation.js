@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import ReactDOMServer from "react-dom/server";
-import Rekomendasi from "../Assets/Rekomendasi.png";
-import String from "../Assets/string.png";
+import Rekomendasi from "../../Assets/Rekomendasi.png";
+import String from "../../Assets/string.png";
 // import SearchBar from "../components/SearchBar/SearchBar";
-import CollapseSideBar from "../components/CollapseSideBar/CollapseSideBar";
-import FoodCatalog from "../components/FoodCatalogue/FoodCatalog";
+import CollapseSideBar from "../../components/CollapseSideBar/CollapseSideBar";
+import FoodCatalog from "../../components/FoodCatalogue/FoodCatalog";
 
 function Recommendation() {
   const [activeFilter, setActiveFilter] = useState("All");
