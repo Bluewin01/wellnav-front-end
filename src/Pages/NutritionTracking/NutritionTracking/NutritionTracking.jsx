@@ -28,9 +28,7 @@ function NutritionTracking() {
       </div>
       <div className="personalize-section">
         <p>Personalisasikan Makanan Anda</p>
-        <DailyMeal mealType={"Sarapan"} />
-        <DailyMeal mealType={"Makan Siang"} />
-        <DailyMeal mealType={"Makan Malam"} />
+        <DailyMeal />
       </div>
     </div>
   );
