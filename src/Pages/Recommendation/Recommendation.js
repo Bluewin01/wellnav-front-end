@@ -5,6 +5,7 @@ import String from "../../Assets/string.png";
 // import SearchBar from "../components/SearchBar/SearchBar";
 import CollapseSideBar from "../../components/CollapseSideBar/CollapseSideBar";
 import FoodCatalog from "../../components/FoodCatalogue/FoodCatalog";
+import "./Recommendation.css";
 
 function Recommendation() {
   const [activeFilter, setActiveFilter] = useState("All");
