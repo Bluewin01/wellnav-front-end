@@ -1,3 +1,10 @@
+.food-choices{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding-left: 80px;
+}
+
 .food-choice-container {
     display: flex;
     flex-direction: column;
@@ -5,7 +12,7 @@
     padding: 7px 20px 20px 20px;
     border-radius: 8px;
     max-width: 200px;
-    margin: 20px auto;
+    margin: 20px;
     position:relative;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
     border: 1px solid #e0e0e0;
@@ -43,9 +50,15 @@
     font-size: 16px;
     width: 100px;
     max-height: 30px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .add-button.selected {
+    background-color: #2A4B2D;
   }
   
-  .add-button:hover {
+  /* .add-button:hover {
     background-color: #D6632B;
-  }
+  } */
   
