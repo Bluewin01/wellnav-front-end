@@ -1,12 +1,11 @@
-// src/Calendar.js
 import React from "react";
 import "./Calendar.css";
 
 const Calendar = () => {
-  const daysOfWeek = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+  const daysOfWeek = ["Min", "Sen", "Sel", "Rab", "Kam", "Jum", "Sab"];
   const currentDate = new Date();
   const currentDay = currentDate.getDay(); // 0 (Sun) to 6 (Sat)
-  const currentMonth = currentDate.toLocaleString("default", { month: "long" }); // Full month name
+  const currentMonth = currentDate.toLocaleString("id-ID", { month: "long" }); // Full month name in Indonesian
   const currentDateNumber = currentDate.getDate();
 
   const getDatesOfWeek = () => {

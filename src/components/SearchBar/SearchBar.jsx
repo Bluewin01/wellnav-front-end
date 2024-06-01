@@ -27,7 +27,7 @@ const SearchBar = () => {
       <input
         type="text"
         className="form-control"
-        placeholder="Search"
+        placeholder="Cari"
         aria-label="Search"
         aria-describedby="button-addon2"
         value={query}
