@@ -18,16 +18,14 @@
     border: 1px solid #e0e0e0;
   }
   
-  .food-image-container{
-    display:flex;
-    justify-content: center;
-  }
   .food-image {
     display: flex;
+    background-color: white;
     max-width: 100%;
     border-radius: 100%;
     margin-bottom: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  
+    object-fit: cover;
   }
   
   .food-details h3 {
@@ -57,8 +55,5 @@
   .add-button.selected {
     background-color: #2A4B2D;
   }
-  
-  /* .add-button:hover {
-    background-color: #D6632B;
-  } */
+
   

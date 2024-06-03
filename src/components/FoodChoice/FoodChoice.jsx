@@ -29,9 +29,8 @@ const FoodChoice = ({ counter, onCounterChange }) => {
     <div className="food-choices">
       {foodChoices.map((item) => (
         <div key={item.id} className="food-choice-container">
-          <div className="food-image-container">
-            <img src={exampleImage} alt={item.name} className="food-image" />
-          </div>
+          <img src={exampleImage} alt={item.name} className="food-image" />
+
           <div className="food-details">
             <h3>{item.name}</h3>
             <p>{item.detail}</p>

@@ -4,6 +4,7 @@ import FoodChoice from "../../../components/FoodChoice/FoodChoice";
 import "./NutritionTrackingA.css";
 import SearchBar from "../../../components/SearchBar/SearchBar";
 import profilePicture from "../../../Assets/Salad.png";
+import { useNavigate } from "react-router-dom";
 
 function NutritionTracking() {
   const [activeFilter, setActiveFilter] = useState("All");
@@ -12,6 +13,12 @@ function NutritionTracking() {
 
   const handleCounterChange = (newCounter) => {
     setCounter(newCounter);
+  };
+
+  const navigate = useNavigate();
+
+  const navigateToNutritionTrackingB = () => {
+    navigate("/nutrition-tracking/food-choices/nutrition-data");
   };
 
   return (
@@ -43,7 +50,7 @@ function NutritionTracking() {
       </div>
       <FoodChoice counter={counter} onCounterChange={handleCounterChange} />
       <div className="big-add-button">
-        <button>
+        <button onClick={navigateToNutritionTrackingB}>
           Tambah
           <div className="circle">
             <span className="circle-text">{counter}</span>
