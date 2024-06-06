@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 import Recommendation from "./Pages/Recommendation/Recommendation";
 import WaterTracking from "./Pages/WaterTracking/WaterTracking";
+import LandingPage from "./Pages/LandingPage/LandingPage";
 import PelacakanNutrisi from "./Pages/NutritionTracking/NutritionTracking/NutritionTracking";
 
 import { useNavigate } from "react-router-dom";
@@ -17,6 +18,7 @@ function App() {
         <Routes>
           <Route path="Recommendation" element={<Recommendation />} />
           <Route path="WaterTracking" element={<WaterTracking />} />
+          <Route path="LandingPage" element={<LandingPage />} />
           <Route path="/nutrition-tracking" element={<NutritionTracking />} />
           <Route
             path="/nutrition-tracking/food-choices"

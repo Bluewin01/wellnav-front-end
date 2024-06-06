@@ -1,0 +1,160 @@
+.Landing-Header {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  margin-left: 15vh;
+}
+.Landing-Header h1 {
+  margin-right: 75vh;
+}
+.Landing-Header p {
+  font-size: 20px;
+  margin-left: 100px;
+  font-weight: 500;
+}
+/* PENGENALAN */
+.Landing-Content {
+  background-color: #294c2b;
+  color: #fff;
+  border-radius: 30px;
+  margin-top: 2vh;
+  margin-left: 15vh;
+  margin-right: 20vh;
+  padding: 20px 80px 50px;
+}
+.Landing-Content p {
+  font-size: 20px;
+  margin-top: 3vh;
+  margin-bottom: 4vh;
+}
+.Landing-Content button {
+  padding: 8px 70px;
+  background-color: #ef723d;
+  font-size: 15px;
+  font-weight: 800;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+}
+.Landing-Content button:hover {
+  background-color: #f0dd98;
+  color: #000000;
+}
+.Landing-Content .Home-img {
+  position: absolute;
+  transform: translate(130%, -21%);
+  width: 60vh;
+  object-fit: cover;
+  index: 1;
+}
+/* ABOUT US */
+.Landing-About {
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: -15px;
+  max-width: 100%;
+  font-size: 20px;
+}
+.Landing-About p {
+  border-radius: 10px;
+  max-width: 100%;
+  font-size: 20px;
+}
+.Landing-About button {
+  padding: 8px 10px;
+  background-color: #ef723d;
+  font-size: 15px;
+  font-weight: 800;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+}
+.Landing-About button:hover {
+  background-color: #f0dd98;
+  color: #000000;
+}
+
+/* PENJELASAN FITUR */
+.Landing-Why {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -20px;
+  width: 100%;
+  max-width: 800px;
+  padding: 0 20px;
+  margin-left: 39vh;
+}
+.spacing-br br {
+  content: "";
+  display: block;
+  margin-bottom: 15px;
+}
+.LString-img {
+  position: absolute;
+  transform: translate(-65%, 60%);
+  width: 67vh;
+  object-fit: cover;
+  z-index: 1;
+}
+.Center-Why {
+  text-align: center;
+  width: 100%;
+  padding-top: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #000000;
+}
+.Landing-Why .right-img {
+  position: absolute;
+  transform: translate(115%, 50%);
+}
+.Landing-Fitur {
+  background-color: #f0dd98;
+  padding-bottom: 5vh;
+  margin-top: -8vh;
+}
+.FiturContent-Left,
+.FiturContent-Right {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-left: 15vh;
+  margin-right: 15vh;
+}
+
+.FiturContent-Left {
+  justify-content: flex-start;
+}
+
+.FiturContent-Right {
+  justify-content: flex-end;
+}
+
+.Pelacakan-img,
+.Kalori-img,
+.Notifikasi-img {
+  width: 45vh;
+  height: auto;
+  margin-right: 20px;
+  margin-top: 5vh;
+  margin-right: 7vh;
+}
+
+.FiturContent-Right .Kalori-img {
+  margin-left: 10vh;
+}
+
+.Text-Content {
+  max-width: 100%;
+}
+
+.Text-Content h1 {
+  font-size: 27px;
+  margin-bottom: 10px;
+}
+
+.Text-Content p {
+  font-size: 20px;
+}
