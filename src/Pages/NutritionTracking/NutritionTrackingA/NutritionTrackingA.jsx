@@ -1,18 +1,34 @@
 import React, { useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import CollapseSideBar from "../../../components/CollapseSideBar/CollapseSideBar";
 import FoodChoice from "../../../components/FoodChoice/FoodChoice";
 import "./NutritionTrackingA.css";
 import SearchBar from "../../../components/SearchBar/SearchBar";
 import profilePicture from "../../../Assets/Salad.png";
 import { useNavigate } from "react-router-dom";
+import {
+  incrementCounter,
+  decrementCounter,
+  setSelectedItems,
+} from "../../../redux/actions";
 
-function NutritionTracking() {
+function NutritionTrackingA() {
   const [activeFilter, setActiveFilter] = useState("All");
   const filters = ["All", "Rendah Kalori", "Bebas Gluten", "Vegan"];
-  const [counter, setCounter] = useState(0);
+  const counter = useSelector((state) => state.counter);
+  const selectedItems = useSelector((state) => state.selectedItems);
+  const dispatch = useDispatch();
 
   const handleCounterChange = (newCounter) => {
-    setCounter(newCounter);
+    if (newCounter > counter) {
+      dispatch(incrementCounter());
+    } else {
+      dispatch(decrementCounter());
+    }
+  };
+
+  const handleSelectedItemsChange = (newSelectedItems) => {
+    dispatch(setSelectedItems(newSelectedItems));
   };
 
   const navigate = useNavigate();
@@ -48,17 +64,23 @@ function NutritionTracking() {
           </button>
         ))}
       </div>
-      <FoodChoice counter={counter} onCounterChange={handleCounterChange} />
-      <div className="big-add-button">
-        <button onClick={navigateToNutritionTrackingB}>
-          Tambah
-          <div className="circle">
-            <span className="circle-text">{counter}</span>
-          </div>
-        </button>
-      </div>
+      <FoodChoice
+        counter={counter}
+        onCounterChange={handleCounterChange}
+        onSelectedItemsChange={handleSelectedItemsChange}
+      />
+      {selectedItems.length > 0 && (
+        <div className="big-add-button">
+          <button onClick={navigateToNutritionTrackingB}>
+            Tambah
+            <div className="circle">
+              <span className="circle-text">{counter}</span>
+            </div>
+          </button>
+        </div>
+      )}
     </div>
   );
 }
 
-export default NutritionTracking;
+export default NutritionTrackingA;
