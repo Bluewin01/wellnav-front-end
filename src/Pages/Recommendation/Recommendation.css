@@ -72,7 +72,7 @@ body,
 }
 .Food-Section .right-img {
   position: absolute;
-  padding-left: 343vh;
+  transform: translate(140%, 50%);
 }
 .center-text {
   padding-top: 20px;
