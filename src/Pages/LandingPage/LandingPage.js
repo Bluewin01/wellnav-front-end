@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 import Home from "../../Assets/Home.png";
 import FiturPelacakan from "../../Assets/FiturPelacakan.png";
 import FiturKalori from "../../Assets/FiturKalori.png";
@@ -7,13 +8,23 @@ import String from "../../Assets/string.png";
 import "./LandingPage.css";
 
 function Recommendation() {
+  const location = useLocation();
+  const isLandingPage = location.pathname === "/";
   return (
     <div className="App">
       <div className="Landing-Header">
         <h1>Wellnav</h1>
-        <p>Home</p>
-        <p>About</p>
-        <p>Faq</p>
+        <p className="Landing-Home">
+          <Link to="/LandingPage" className={isLandingPage ? "active" : ""}>
+            Home
+          </Link>
+        </p>
+        <p>
+          <Link to="/AboutUs">About</Link>
+        </p>
+        <p>
+          <Link to="/faq">FAQ</Link>
+        </p>
       </div>
       {/* PENGENALAN  */}
       <div className="spacing-br">
@@ -39,7 +50,8 @@ function Recommendation() {
             Perkenalkan kami tiga mahasiswa semester akhir <br />
             dari Universitas Bina Nusantara
           </p>
-          <button>Lainnya...</button>
+          {/* <button>Lainnya...</button> */}
+          <Link to="/AboutUs">Lainnya...</Link>
         </div>
 
         <div className="Landing-Why">
