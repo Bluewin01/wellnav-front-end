@@ -132,7 +132,8 @@
 }
 .Landing-Fitur {
   background-color: #f0dd98;
-  padding-bottom: 5vh;
+  /* padding-bottom: 5vh; */
+  margin-bottom: -20px;
   margin-top: -8vh;
 }
 .FiturContent-Left,
@@ -151,17 +152,23 @@
 .FiturContent-Right {
   justify-content: flex-end;
 }
-
+/* .Notifikasi-img */
 .Pelacakan-img,
-.Kalori-img,
-.Notifikasi-img {
+.Kalori-img {
   width: 45vh;
   height: auto;
   margin-right: 20px;
   margin-top: 5vh;
   margin-right: 7vh;
 }
-
+.Notifikasi-img {
+  width: 45vh;
+  height: auto;
+  margin-right: 20px;
+  margin-top: 5vh;
+  margin-right: 7vh;
+  margin-bottom: 70px;
+}
 .FiturContent-Right .Kalori-img {
   margin-left: 10vh;
 }

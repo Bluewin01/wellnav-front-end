@@ -80,10 +80,19 @@
 .AboutUs-Reason h1 {
   border-bottom: 5px solid #294c2b;
   width: 80vh;
+  font-size: 30px;
   padding-bottom: 20px;
-  margin-bottom: 30px;
   margin-left: 35vh;
 }
+.AboutUs-Thank,
 .AboutUs-Reason p {
   font-size: 20px;
+}
+.AboutUs-Thank h1 {
+  font-size: 30px;
+  padding-bottom: 15px;
+}
+.AboutUs-Thank {
+  text-align: center;
+  margin-bottom: 10vh;
 }

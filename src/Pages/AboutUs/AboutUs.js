@@ -5,8 +5,11 @@ import Anggota1 from "../../Assets/Anggota1.png";
 import Anggota2 from "../../Assets/Anggota2.png";
 import Anggota3 from "../../Assets/Anggota3.png";
 import "./AboutUs.css";
+import Footer from "../../components/Footer/Footer";
 
 const AboutUs = () => {
+  const location = useLocation();
+  const isLandingPage = location.pathname === "/";
   return (
     <div className="App">
       <div className="Landing-Header">
@@ -78,6 +81,20 @@ const AboutUs = () => {
           hidup yang lebih sehat.
         </p>
       </div>
+      {/* TERIMA KASIH*/}
+      <div className="AboutUs-Thank">
+        <h1>Terima Kasih</h1>
+        <p>
+          Terima kasih telah memilih WellNav sebagai panduan kesehatan Anda.{" "}
+          <br />
+          Jika Anda memiliki pertanyaan atau masukan, jangan ragu untuk
+          menghubungi kami. <br />
+          Kami siap membantu Anda setiap langkah dalam perjalanan kesehatan
+          Anda.
+        </p>
+      </div>
+      {/* FOOTER*/}
+      <Footer />
     </div>
   );
 };

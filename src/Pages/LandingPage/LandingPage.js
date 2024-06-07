@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
+import Footer from "../../components/Footer/Footer";
 import Home from "../../Assets/Home.png";
 import FiturPelacakan from "../../Assets/FiturPelacakan.png";
 import FiturKalori from "../../Assets/FiturKalori.png";
@@ -139,6 +140,7 @@ function Recommendation() {
             </div>
           </div>
         </div>
+        <Footer />
       </div>
     </div>
   );
