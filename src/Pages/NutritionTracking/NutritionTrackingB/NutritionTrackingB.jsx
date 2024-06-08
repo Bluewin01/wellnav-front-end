@@ -6,6 +6,7 @@ import profilePicture from "../../../Assets/Salad.png";
 import CalorieChart from "../../../components/CalorieChart/CalorieChart";
 import NutritionChart from "../../../components/NutritionChart/NutritionChart";
 import FoodTaken from "../../../components/FoodTaken/FoodTaken";
+import WarningMessage from "../../../components/WarningMessage/WarningMessage";
 import { useDispatch, useSelector } from "react-redux";
 import chefPicture from "../../../Assets/Rekomendasi.png";
 
@@ -43,8 +44,8 @@ function NutritionTrackingB() {
       </div>
       <div className="personalize-section">
         <NutritionChart />
-
         <FoodTaken />
+        <WarningMessage />
       </div>
     </div>
   );
