@@ -1,12 +1,19 @@
+.nutrition-chart-position{
+  display: flex;
+  justify-content: center;
+}
+
 .nutrition-chart-container {
   background-color: #294C2B;
   padding: 35px;
-  margin: 10px;
+  margin: 0px 10px 10px 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   border-radius: 10px;
-  max-width: 700px;
+  width: 700px;
+  height: 150px;
 }
 
 .nutrition-chart-items {

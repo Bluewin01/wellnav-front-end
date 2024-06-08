@@ -3,11 +3,13 @@ import {
   INCREMENT_COUNTER,
   DECREMENT_COUNTER,
   SET_SELECTED_ITEMS,
+  SET_MEAL_TYPE,
 } from "./actionTypes";
 
 const initialState = {
   counter: 0,
   selectedItems: [],
+  mealType: null,
 };
 
 const rootReducer = (state = initialState, action) => {
@@ -26,6 +28,11 @@ const rootReducer = (state = initialState, action) => {
       return {
         ...state,
         selectedItems: action.payload,
+      };
+    case SET_MEAL_TYPE:
+      return {
+        ...state,
+        mealType: action.payload,
       };
     default:
       return state;

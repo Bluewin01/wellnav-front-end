@@ -1,8 +1,8 @@
+
 .doughnut-chart-container {
     display: flex;
     justify-content: center; /* Align items horizontally in the center */
     align-items: center; /* Align items vertically in the center */
-    width: 100%; /* Ensure the container takes the full width */
   }
   
   .doughnut-chart {

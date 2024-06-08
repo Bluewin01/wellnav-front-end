@@ -36,42 +36,44 @@ const NutritionChart = () => {
   };
 
   return (
-    <div className="nutrition-chart-container">
-      <div className="nutrition-chart-items">
-        <div className="nutrition-chart-item">
-          <div className="nutrition-chart-header">Kalori</div>
-          <div className="nutrition-chart-content">
-            <div className="doughnut-chart-wrapper">
-              <Doughnut data={data} options={options} />
+    <div className="nutrition-chart-position">
+      <div className="nutrition-chart-container">
+        <div className="nutrition-chart-items">
+          <div className="nutrition-chart-item">
+            <div className="nutrition-chart-header">Kalori</div>
+            <div className="nutrition-chart-content">
+              <div className="doughnut-chart-wrapper">
+                <Doughnut data={data} options={options} />
+              </div>
+              <div className="nutrition-value">1500 kkal</div>
             </div>
-            <div className="nutrition-value">1500 kkal</div>
           </div>
-        </div>
-        <div className="nutrition-chart-item">
-          <div className="nutrition-chart-header">Karbohidrat</div>
-          <div className="nutrition-chart-content">
-            <div className="doughnut-chart-wrapper">
-              <Doughnut data={data} options={options} />
+          <div className="nutrition-chart-item">
+            <div className="nutrition-chart-header">Karbohidrat</div>
+            <div className="nutrition-chart-content">
+              <div className="doughnut-chart-wrapper">
+                <Doughnut data={data} options={options} />
+              </div>
+              <div className="nutrition-value">200 g</div>
             </div>
-            <div className="nutrition-value">200 g</div>
           </div>
-        </div>
-        <div className="nutrition-chart-item">
-          <div className="nutrition-chart-header">Protein</div>
-          <div className="nutrition-chart-content">
-            <div className="doughnut-chart-wrapper">
-              <Doughnut data={data} options={options} />
+          <div className="nutrition-chart-item">
+            <div className="nutrition-chart-header">Protein</div>
+            <div className="nutrition-chart-content">
+              <div className="doughnut-chart-wrapper">
+                <Doughnut data={data} options={options} />
+              </div>
+              <div className="nutrition-value">75 g</div>
             </div>
-            <div className="nutrition-value">75 g</div>
           </div>
-        </div>
-        <div className="nutrition-chart-item">
-          <div className="nutrition-chart-header">Lemak</div>
-          <div className="nutrition-chart-content">
-            <div className="doughnut-chart-wrapper">
-              <Doughnut data={data} options={options} />
+          <div className="nutrition-chart-item">
+            <div className="nutrition-chart-header">Lemak</div>
+            <div className="nutrition-chart-content">
+              <div className="doughnut-chart-wrapper">
+                <Doughnut data={data} options={options} />
+              </div>
+              <div className="nutrition-value">50 g</div>
             </div>
-            <div className="nutrition-value">50 g</div>
           </div>
         </div>
       </div>
