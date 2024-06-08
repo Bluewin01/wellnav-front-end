@@ -37,6 +37,8 @@ function NutritionTrackingA() {
     navigate("/nutrition-tracking/food-choices/nutrition-data");
   };
 
+  const mealType = useSelector((state) => state.mealType);
+
   return (
     <div className="App">
       <CollapseSideBar />
@@ -50,7 +52,7 @@ function NutritionTrackingA() {
           <img src={profilePicture} className="profile-picture" alt="profile" />
         </div>
       </div>
-      <div className="choose-meal-title">Pilih sarapan hari ini</div>
+      <div className="choose-meal-title">Pilih {mealType} hari ini</div>
       <div className="filter-section">
         {filters.map((filter) => (
           <button

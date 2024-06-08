@@ -10,6 +10,9 @@ const FoodTaken = () => {
 
   return (
     <div className="food-taken">
+      <div className="food-taken-header">
+        <div className="food-taken-text">Makanan yang dikonsumsi</div>
+      </div>
       {selectedItems.map((item) => (
         <div key={item.id} className="food-choice-container2">
           <img src={exampleImage} alt={item.name} className="food-image2" />

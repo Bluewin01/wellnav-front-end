@@ -23,15 +23,6 @@
   font-size: 20px;
 }
 
-.food-name{
-
-}
-
-.calorie-count{
-
-}
-
-
   .add-button button {
     background-color: #EF723D;
     color: white; 
@@ -45,7 +36,6 @@
   }
   
   .add-button button:hover {
-    background-color: #D6632B;
   }
 
 .daily-meal-image img {

@@ -1,27 +1,35 @@
 import React from "react";
+import { useDispatch } from "react-redux";
 import "./DailyMeal.css";
 import exampleImage from "../../Assets/Salad.png";
 import { useNavigate } from "react-router-dom";
-import { type } from "@testing-library/user-event/dist/type";
+import { setMealType } from "../../redux/actions";
 
 const DailyMeal = () => {
   const navigate = useNavigate();
+  const dispatch = useDispatch();
+
   const mealType = [
     { id: 1, type: "Sarapan" },
     { id: 2, type: "Makan Siang" },
     { id: 3, type: "Makan Malam" },
   ];
-  const navigateToFoodChoices = () => {
+
+  const navigateToFoodChoices = (type) => {
+    dispatch(setMealType(type));
     navigate("/nutrition-tracking/food-choices");
   };
+
   return (
     <div>
       {mealType.map((item) => (
-        <div className="daily-meal-container">
+        <div key={item.id} className="daily-meal-container">
           <div className="daily-meal-info">
             <div className="meal-type">{item.type}</div>
             <div className="add-button">
-              <button onClick={navigateToFoodChoices}>Tambah</button>
+              <button onClick={() => navigateToFoodChoices(item.type)}>
+                Tambah
+              </button>
             </div>
           </div>
           <div className="daily-meal-image">

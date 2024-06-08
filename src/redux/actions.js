@@ -3,6 +3,7 @@ import {
   INCREMENT_COUNTER,
   DECREMENT_COUNTER,
   SET_SELECTED_ITEMS,
+  SET_MEAL_TYPE,
 } from "./actionTypes";
 
 export const incrementCounter = () => ({
@@ -16,4 +17,9 @@ export const decrementCounter = () => ({
 export const setSelectedItems = (items) => ({
   type: SET_SELECTED_ITEMS,
   payload: items,
+});
+
+export const setMealType = (mealType) => ({
+  type: SET_MEAL_TYPE,
+  payload: mealType,
 });
