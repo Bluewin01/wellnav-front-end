@@ -35,13 +35,8 @@
   border-top: 2px solid black;
 }
 
-.calendar-section {
 
-}
-
-.personalize-section {
-
-  padding: 20px 180px 20px 180px;
+.personalize-section-daily-meal {
   background-color: #F0DD98;
   display: flex;
   flex-direction: column;
@@ -50,4 +45,9 @@
 .profile-picture {
   width: 100px;
   height:100px;
+}
+
+.calendar-section{
+  display: flex;
+  justify-content: center;
 }

@@ -21,7 +21,7 @@ const Calendar = () => {
   const datesOfWeek = getDatesOfWeek();
 
   return (
-    <div className="container">
+    <div className="calendar-container">
       <div className="calendar">
         <div className="month">{currentMonth}</div>
         <div className="week">

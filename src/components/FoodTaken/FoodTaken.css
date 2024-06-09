@@ -1,13 +1,13 @@
 .food-taken{
-
+      padding: 20px 150px 20px 150px;
 }
 
 .food-taken-text{
   display: flex;
   justify-content: flex-start;
-  margin-left: 5px;
   margin-bottom: 15px ;
   margin-top: 25px;
+  margin-left:20px;
 }
 
 .food-taken-header {
@@ -21,6 +21,7 @@ flex-direction: row;
 flex-wrap: wrap;
 gap:20px;
 margin-bottom: 20px;
+
   }
   
   .food-choice-container2 {
@@ -29,8 +30,8 @@ margin-bottom: 20px;
       background-color: #FFFFFF;
       padding: 7px 20px 20px 20px;
       border-radius: 8px;
-      width: 600px;
-      height: 220px;
+      width: 850px;
+      height: 280px;
       margin: 0px;
    
       position:relative;
