@@ -45,6 +45,8 @@ function NutritionTrackingB() {
       <div className="personalize-section">
         <NutritionChart />
         <FoodTaken />
+      </div>
+      <div className="warning-section">
         <WarningMessage />
       </div>
     </div>
