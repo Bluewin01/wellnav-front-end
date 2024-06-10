@@ -4,30 +4,7 @@
     flex-direction: column;
   }
   
-  .main-content {
-    flex: 1;
-    padding: 20px;
-  }
-  
-  .top-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding-bottom: 20px;
-  }
-  
-  .greeting-section {
-    display: flex;
-    flex-direction: column;
-    margin-left: 10vh;
-    margin-top: 2vh;
-  }
-  
-  .search-profile-section {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-  }
+
   
   .center-line {
     width: 85%;
@@ -60,9 +37,10 @@
   }
 
   .chef-picture{
-    max-width: 300px;
+    max-width: 600px;
     position: relative;
     top: 20px; 
+    flex-grow: 1 ;
     /* transform: translateY(20px);  */
   }
 
