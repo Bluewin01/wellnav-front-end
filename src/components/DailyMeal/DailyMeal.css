@@ -1,3 +1,17 @@
+.daily-meals{
+  padding: 40px 220px 20px 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.daily-meals-container{
+display: flex;
+flex-direction: column;
+gap:30px;
+align-items: center;
+}
+
 .daily-meal-container {
   display: flex;
   justify-content: space-between;
@@ -5,10 +19,15 @@
   background-color: #294C2B;
   color: white;
   padding: 20px 0px 20px 70px;
-  border-radius: 8px;
-  width: 600px;
-  margin: 20px auto;
-  max-height: 140px;
+  border-radius: 16px;
+  width: 1450px;
+  height: 250px;
+}
+
+.personalize-meal-text{
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 20px;
 }
 
 .daily-meal-info {

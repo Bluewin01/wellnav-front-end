@@ -1,47 +1,14 @@
-.App {
-    font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .main-content {
-    flex: 1;
-    padding: 20px;
-  }
-  
-  .top-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding-bottom: 20px;
-  }
-  
-  .greeting-section {
-    display: flex;
-    flex-direction: column;
-    margin-left: 10vh;
-    margin-top: 2vh;
-  }
-  
-  .search-profile-section {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-  }
-  
+
   .center-line {
     width: 85%;
     margin: 0 auto 0px auto;
     border-top: 2px solid black;
   }
-
   .personalize-section {
     padding: 20px 0px 20px 0px;
-    /* text-align: center; */
     background-color: #F0DD98;
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
   }
   
   .profile-picture {
@@ -53,7 +20,6 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap:25px;
   }
 
   .chart-description{
@@ -63,7 +29,11 @@
   }
 
   .chef-picture{
-    max-width: 300px;
+    max-width: 600px;
+    position: relative;
+    top: 20px; 
+    /* flex-grow: 1 ; */
+    /* transform: translateY(20px);  */
   }
 
 .chart-meal-type{
@@ -72,4 +42,9 @@
 
 .chart-calorie-left{
 /* add different font type here */
+}
+
+.warning-section{
+  padding: 20px 0px 20px 0px;
+  background-color: #F0DD98;
 }
