@@ -15,6 +15,7 @@ import NutritionTrackingB from "./Pages/NutritionTracking/NutritionTrackingB/Nut
 import AboutUs from "./Pages/AboutUs/AboutUs";
 import ReminderNotification from "./Pages/ReminderNotification/ReminderNotification";
 import SignUp from "./Pages/SignUp/SignUp";
+import SignIn from "./Pages/SignIn/SignIn";
 
 function App() {
   return (
@@ -40,6 +41,7 @@ function App() {
             element={<ReminderNotification />}
           />
           <Route path="/sign-up" element={<SignUp />} />
+          <Route path="/sign-in" element={<SignIn />} />
         </Routes>
       </Router>
     </div>
