@@ -33,7 +33,7 @@
   background-color: #294c2b;
   color: #fff;
   border-radius: 30px;
-  margin-top: 3vh;
+  margin-top: 4vh;
   margin-left: 15vh;
   margin-right: 20vh;
   padding: 20px 80px 50px;
@@ -61,7 +61,7 @@
 }
 .Landing-Content .Home-img {
   position: absolute;
-  transform: translate(130%, -21%);
+  transform: translate(137%, -17%);
   width: 60vh;
   object-fit: cover;
   index: 1;

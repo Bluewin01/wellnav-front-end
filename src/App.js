@@ -6,6 +6,7 @@ import Recommendation from "./Pages/Recommendation/Recommendation";
 import WaterTracking from "./Pages/WaterTracking/WaterTracking";
 import LandingPage from "./Pages/LandingPage/LandingPage";
 import FAQ from "./Pages/FAQ/FAQ";
+import Dashboard from "./Pages/Dashboard/Dashboard";
 import PelacakanNutrisi from "./Pages/NutritionTracking/NutritionTracking/NutritionTracking";
 
 import { useNavigate } from "react-router-dom";
@@ -32,6 +33,7 @@ function App() {
             path="/nutrition-tracking/food-choices/nutrition-data"
             element={<NutritionTrackingB />}
           />
+          <Route path="/Dashboard" element={<Dashboard />} />
           <Route path="/FAQ" element={<FAQ />} />
           <Route path="/AboutUs" element={<AboutUs />} />
           <Route

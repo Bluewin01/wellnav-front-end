@@ -36,13 +36,14 @@ body,
 .daily-target p {
   margin: 0;
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 700;
   margin-right: 10px;
 }
 
 .daily-target h3 {
   margin: 0;
-  font-size: 25px;
+  font-size: 30px;
+  font-weight: bold;
 }
 
 .left-section {
@@ -101,7 +102,6 @@ body,
 .form-section form input {
   padding: 8px;
   /* padding-left: 1vh; */
-
   text-align: left;
   margin-top: 5px;
   margin-left: 40vh;
@@ -130,7 +130,6 @@ body,
   -webkit-appearance: none;
   margin: 0;
   padding-right: 15vh;
-
   border: 1px solid #ccc;
   border-radius: 4px;
 }
@@ -166,16 +165,18 @@ body,
   border-radius: 10px;
   color: #000000;
   max-width: 100%;
-  padding: 5vh 10vh 25vh;
-  margin-top: -21vh;
+  padding: 5vh 10vh 19vh;
+  margin-top: -22vh;
 }
 .log-section h3 {
   font-size: 25px;
-  margin-bottom: 3vh;
+  margin-bottom: 4vh;
+  margin-top: 1vh;
+  font-weight: 600;
 }
 .Air-img {
-  position: absolute;
-  transform: translate(10%, -10%);
+  /* position: absolute; */
+  transform: translate(10%, -15%);
   width: 12vh;
   margin-top: 6vh;
   margin-left: 37vh;
@@ -233,13 +234,14 @@ body,
 .total-intake p {
   margin: 0;
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 700;
   margin-right: 10px;
 }
 
 .total-intake h3 {
   margin: 0;
   font-size: 30px;
+  font-weight: bold;
 }
 /* .total-intake {
   margin-bottom: 10px;
@@ -253,6 +255,6 @@ body,
   font-size: 17px;
   font-weight: 900;
   padding-left: 15vh;
-  padding-top: 20px;
+  padding-top: 30px;
   color: #294c2b;
 }
