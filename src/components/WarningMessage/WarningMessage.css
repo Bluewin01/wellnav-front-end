@@ -1,13 +1,18 @@
+
 .warning-message-container {
-   width: 100%;
+    /* width: 100vw; */
     background-color: #8C2020;
     color: white;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Center vertically */
-    align-items: center; /* Center horizontally */
-    box-sizing: border-box;
+    /* justify-content: center;  */
+    /* align-items: center;  */
+    /* box-sizing: border-box; */
     padding: 20px;
+    z-index: 9999;
+    text-align: center;
+   
+
 }
 
 .warning-message-container h1 {

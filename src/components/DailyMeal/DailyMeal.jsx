@@ -21,22 +21,27 @@ const DailyMeal = () => {
   };
 
   return (
-    <div>
-      {mealType.map((item) => (
-        <div key={item.id} className="daily-meal-container">
-          <div className="daily-meal-info">
-            <div className="meal-type">{item.type}</div>
-            <div className="add-button">
-              <button onClick={() => navigateToFoodChoices(item.type)}>
-                Tambah
-              </button>
+    <div className="daily-meals">
+      <div className="personalize-meal-text">
+        <h1>Personalisasikan makanan harian anda</h1>
+      </div>
+      <div className="daily-meals-container">
+        {mealType.map((item) => (
+          <div key={item.id} className="daily-meal-container">
+            <div className="daily-meal-info">
+              <div className="meal-type">{item.type}</div>
+              <div className="add-button">
+                <button onClick={() => navigateToFoodChoices(item.type)}>
+                  Tambah
+                </button>
+              </div>
+            </div>
+            <div className="daily-meal-image">
+              <img src={exampleImage} alt="Meal" />
             </div>
           </div>
-          <div className="daily-meal-image">
-            <img src={exampleImage} alt="Meal" />
-          </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
   );
 };

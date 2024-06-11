@@ -26,8 +26,7 @@ function NutritionTracking() {
       <div className="calendar-section">
         <Calendar />
       </div>
-      <div className="personalize-section">
-        <p>Personalisasikan Makanan Anda</p>
+      <div className="personalize-section-daily-meal">
         <DailyMeal />
       </div>
     </div>

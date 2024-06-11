@@ -1,24 +1,27 @@
 .food-taken{
-display: flex;
-flex-direction: row;
-flex-wrap: wrap;
-justify-content: center;
+      padding: 20px 150px 20px 150px;
 }
 
 .food-taken-text{
-  
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 15px ;
+  margin-top: 25px;
+  margin-left:20px;
 }
 
 .food-taken-header {
-  width: 100%;
-  text-align: center;
+  /* width: 100%; */
 }
 
 
-.food-choices{
+.food-choices-container{
     display: flex;
-    gap: 10px;
-    padding-left: 80px;
+flex-direction: row;
+flex-wrap: wrap;
+gap:20px;
+margin-bottom: 20px;
+
   }
   
   .food-choice-container2 {
@@ -27,9 +30,10 @@ justify-content: center;
       background-color: #FFFFFF;
       padding: 7px 20px 20px 20px;
       border-radius: 8px;
-      width: 600px;
-      height: 220px;
-      margin: 20px;
+      width: 850px;
+      height: 280px;
+      margin: 0px;
+   
       position:relative;
       box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
       border: 1px solid #e0e0e0;
