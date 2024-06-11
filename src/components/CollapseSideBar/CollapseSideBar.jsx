@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 import "./CollapseSideBar.css";
 
 const CollapseSidebar = () => {
@@ -13,22 +14,23 @@ const CollapseSidebar = () => {
       <div className={`sidebar ${isOpen ? "open" : ""}`}>
         <ul className="sidebar-menu">
           <li>
-            <a href="#home">Dashboard</a>
+            <Link to="/Dashboard">Dashboard</Link>
           </li>
           <li>
-            <a href="#services">Rekomendasi Makanan</a>
+            <Link to="/Recommendation">Rekomendasi Makanan</Link>
+            {/* <a href="#services">Rekomendasi Makanan</a> */}
           </li>
           <li>
-            <a href="#about">Pelacakan Nutrisi</a>
+            <Link to="/nutrition-tracking">Pelacakan Nutrisi</Link>
           </li>
           <li>
-            <a href="#contact">Pelacakan Air Putih</a>
+            <Link to="/WaterTracking">Pelacakan Air Putih</Link>
           </li>
           <li>
-            <a href="#contact">Notifikasi dan Pengingat</a>
+            <Link to="/Reminder-Notification">Notifikasi dan Pengingat</Link>
           </li>
           <li>
-            <a href="#contact">Keluar</a>
+            <Link to="/LandingPage">Keluar</Link>
           </li>
         </ul>
       </div>

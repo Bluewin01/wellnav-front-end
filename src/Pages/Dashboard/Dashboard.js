@@ -6,6 +6,7 @@ import "./Dashboard.css";
 import KalenderDashboard from "../../components/KalenderDashboard/KalenderDashboard";
 import CalorieChart from "../../components/CalorieChart/CalorieChart";
 import NutritionDashboard from "../../components/NutritionDashboard/NutritionDashboard";
+import Header from "../../components/Header/Header";
 import SearchBar from "../../components/SearchBar/SearchBar";
 
 const Dashboard = () => {
@@ -14,9 +15,7 @@ const Dashboard = () => {
       <CollapseSideBar />
 
       <div className="Dashboard-Container">
-        <h1>Hello, Jane</h1>
-        <p>Mari lacak nutrisi Anda</p>
-        {/* <SearchBar /> */}
+        <Header />
         <div className="Dashboard-Content">
           {/* KIRI */}
           <div className="Dashboard-Left">

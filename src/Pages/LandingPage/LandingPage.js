@@ -40,8 +40,8 @@ function Recommendation() {
             Panduan khusus untuk pola makan sehat, <br />
             disesuaikan dengan kebutuhan kesehatan Anda
           </p>
-
-          <button>Mulai</button>
+          <Link to="/Sign-up">Mulai</Link>
+          {/* <button>Mulai</button> */}
         </div>
         {/* ABOUT US  */}
         <div className="Landing-About">

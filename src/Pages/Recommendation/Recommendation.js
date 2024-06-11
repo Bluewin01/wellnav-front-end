@@ -5,6 +5,7 @@ import String from "../../Assets/string.png";
 // import SearchBar from "../components/SearchBar/SearchBar";
 import CollapseSideBar from "../../components/CollapseSideBar/CollapseSideBar";
 import FoodCatalog from "../../components/FoodCatalogue/FoodCatalog";
+import Header from "../../components/Header/Header";
 import "./Recommendation.css";
 
 function Recommendation() {
@@ -16,9 +17,7 @@ function Recommendation() {
       <CollapseSideBar />
       {/* HEADER*/}
       <div className="Recommendation-Container">
-        <h1>Hello, Jane</h1>
-        <p>Rekomendasi makanan untuk anda</p>
-        {/* <SearchBar /> */}
+        <Header />
         <div className="Recommendation-Header">
           <img
             src={Rekomendasi}

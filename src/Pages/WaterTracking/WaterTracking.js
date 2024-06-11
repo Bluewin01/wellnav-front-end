@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import CollapseSideBar from "../../components/CollapseSideBar/CollapseSideBar";
+import Header from "../../components/Header/Header";
 import Air from "../../Assets/Air.png";
 import "./WaterTracking.css";
 
@@ -31,9 +32,7 @@ const WaterTracking = () => {
     <div className="App">
       <CollapseSideBar />
       <div className="Water-Container">
-        <h1>Hello, Jane</h1>
-        <p>Mari lacak nutrisi Anda</p>
-
+        <Header />
         <div className="daily-target">
           <p>Target Hidrasi </p>
           <h3>{dailyTarget} ml</h3>

@@ -60,6 +60,10 @@ body,
   border: none;
   color: #fff;
 }
+.Dashboard-Req a:hover {
+  background-color: #294c2b;
+}
+
 .Dashboard-Fitur {
   display: flex;
   margin-top: 6vh;
