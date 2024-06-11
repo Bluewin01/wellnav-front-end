@@ -127,7 +127,7 @@ const SignUpForm = () => {
         </button>
         <div className="signin-link">
           <span>Sudah punya akun?</span>
-          <a href="/login">Masuk</a>
+          <a href="/sign-in">Masuk</a>
         </div>
         <div className="login-methods">
           <div className="login-method"></div>
