@@ -1,10 +1,4 @@
-.App {
-    font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  
+ 
   .filter-section {
     display: flex;
   flex-direction: row;
