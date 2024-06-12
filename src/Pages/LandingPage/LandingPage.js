@@ -8,7 +8,7 @@ import FiturNotifikasi from "../../Assets/FiturNotifikasi.png";
 import String from "../../Assets/string.png";
 import "./LandingPage.css";
 
-function Recommendation() {
+function LandingPage() {
   const location = useLocation();
   const isLandingPage = location.pathname === "/";
   return (
@@ -146,4 +146,4 @@ function Recommendation() {
   );
 }
 
-export default Recommendation;
+export default LandingPage;

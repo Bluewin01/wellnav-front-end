@@ -63,7 +63,8 @@
 .Landing-Content .Home-img {
   position: absolute;
   transform: translate(137%, -17%);
-  width: 60vh;
+  width: 100%;
+  max-width: 60vh;
   object-fit: cover;
   index: 1;
 }
@@ -115,7 +116,8 @@
 .LString-img {
   position: absolute;
   transform: translate(-65%, -20%);
-  width: 67vh;
+  width: 100%;
+  max-width: 67vh;
   object-fit: cover;
   z-index: 1;
 }
@@ -130,6 +132,7 @@
 .Landing-Why .right-img {
   position: absolute;
   transform: translate(115%, -50%);
+  width: 100%;
 }
 .Landing-Fitur {
   background-color: #f0dd98;
@@ -156,14 +159,16 @@
 /* .Notifikasi-img */
 .Pelacakan-img,
 .Kalori-img {
-  width: 45vh;
+  width: 100%;
+  max-width: 45vh;
   height: auto;
   margin-right: 20px;
   margin-top: 5vh;
   margin-right: 7vh;
 }
 .Notifikasi-img {
-  width: 45vh;
+  width: 100%;
+  max-width: 45vh;
   height: auto;
   margin-right: 20px;
   margin-top: 5vh;
@@ -172,6 +177,7 @@
 }
 .FiturContent-Right .Kalori-img {
   margin-left: 10vh;
+  width: 100%;
 }
 
 .Text-Content {

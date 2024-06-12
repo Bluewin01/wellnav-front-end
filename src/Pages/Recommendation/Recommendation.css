@@ -99,11 +99,11 @@ body,
 }
 
 .Food-Section2 p:hover {
-  background-color: #c0c0c0;
+  background-color: #294c2b;
   color: #fff;
 }
 
 .Food-Section2 p.active {
-  background-color: #f0dd98;
-  color: #294c2b;
+  background-color: #ef723d;
+  color: #ffffff;
 }
