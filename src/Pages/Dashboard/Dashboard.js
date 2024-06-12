@@ -14,54 +14,56 @@ const Dashboard = () => {
     <div className="App">
       <CollapseSideBar />
 
-      <div className="Dashboard-Container">
+      <div className="Dashboard-Header">
         <Header />
-        <div className="Dashboard-Content">
-          {/* KIRI */}
-          <div className="Dashboard-Left">
-            <div className="Dashboard-Req">
-              <img
-                src={Salad}
-                alt="DashboardSalad"
-                className="DashboardSalad-img"
-              />
-              <h1>
-                Rekomendasi <br /> Makanan Hari ini.
-              </h1>
+        <div className="Dashboard-Container">
+          <div className="Dashboard-Content">
+            {/* KIRI */}
+            <div className="Dashboard-Left">
+              <div className="Dashboard-Req">
+                <img
+                  src={Salad}
+                  alt="DashboardSalad"
+                  className="DashboardSalad-img"
+                />
+                <h1>
+                  Rekomendasi <br /> Makanan Hari ini.
+                </h1>
 
-              <Link to="/Recommendation">Lainnya...</Link>
-            </div>
-
-            <div className="Dashboard-Fitur">
-              {/* KALORI */}
-              <div className="Dashboard-Kalori">
-                <h1>Jumlah Kalori</h1>
-                <div className="Dashboard-Pengukur">
-                  <CalorieChart />
-                </div>
+                <Link to="/Recommendation">Lainnya...</Link>
               </div>
-              {/* REMINDER */}
-              <div className="Dashboard-Reminder">
-                <h1>Pengingat</h1>
-                <div className="spacing-br">
-                  <div className="Dashboard-Pengingat">
-                    <h1>
-                      Sudahkah <br /> anda
-                      <br /> minum?
-                    </h1>
-                    <p>4 Liter/hari</p>
+
+              <div className="Dashboard-Fitur">
+                {/* KALORI */}
+                <div className="Dashboard-Kalori">
+                  <h1>Jumlah Kalori</h1>
+                  <div className="Dashboard-Pengukur">
+                    <CalorieChart />
+                  </div>
+                </div>
+                {/* REMINDER */}
+                <div className="Dashboard-Reminder">
+                  <h1>Pengingat</h1>
+                  <div className="spacing-br">
+                    <div className="Dashboard-Pengingat">
+                      <h1>
+                        Sudahkah <br /> anda
+                        <br /> minum?
+                      </h1>
+                      <p>4 Liter/hari</p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          {/* KANAN*/}
-          <div className="Dashboard-Right">
-            <div className="Dashboard-Calender">
-              <KalenderDashboard />
+            {/* KANAN*/}
+            <div className="Dashboard-Right">
+              <div className="Dashboard-Calender">
+                <KalenderDashboard />
+              </div>
+              {/* PELACKAN NUTRISI*/}
+              <NutritionDashboard />
             </div>
-            {/* PELACKAN NUTRISI*/}
-            <NutritionDashboard />
           </div>
         </div>
       </div>

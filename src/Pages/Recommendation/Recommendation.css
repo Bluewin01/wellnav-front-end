@@ -8,15 +8,11 @@ body,
 .Recommendation-Container {
   margin-left: 5vh;
 }
-.Recommendation-Container h1 {
-  margin-left: 10vh;
-  margin-bottom: 0px;
-}
+
 .Recommendation-Container p {
-  margin-left: 10vh;
   margin-top: 5px;
 }
-.Recommendation-Header {
+.Recommendation-Container {
   position: relative;
   display: flex;
   align-items: center;
@@ -25,8 +21,9 @@ body,
 .Recommendation-Section {
   max-width: 100%;
   padding-right: 93vh;
-  padding-left: 35vh;
+  padding-left: 50vh;
   padding-bottom: 10px;
+  padding-top: 10px;
   background-color: #f0dd98;
   font-size: 20px;
 }
@@ -72,22 +69,21 @@ body,
 }
 .Food-Section .right-img {
   position: absolute;
-  transform: translate(140%, 50%);
+  transform: translate(135%, 50%);
 }
 .center-text {
   padding-top: 20px;
-  padding-left: 30vh;
+  padding-left: 40vh;
   font-size: 20px;
   font-weight: bold;
   color: #294c2b;
 }
 .Food-Section2 {
   display: flex;
-  gap: 10px;
+  gap: 20px;
   justify-content: center;
   align-items: center;
-  gap: 10px;
-  margin-bottom: 5vh;
+  margin-bottom: 3vh;
 }
 
 .Food-Section2 p {

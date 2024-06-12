@@ -35,7 +35,7 @@ const Header = () => {
     <div className="Header">
       <div className="Header-Content">
         <h1>Hello, Jane</h1>
-        <p>Mari lacak nutrisi Anda</p>
+        <p>Mari hidup lebih sehat</p>
       </div>
       <div className="Header-Right">
         <div className="Header-Search">

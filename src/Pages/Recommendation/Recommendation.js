@@ -16,9 +16,9 @@ function Recommendation() {
     <div className="App">
       <CollapseSideBar />
       {/* HEADER*/}
-      <div className="Recommendation-Container">
+      <div className="Recommendation-Header">
         <Header />
-        <div className="Recommendation-Header">
+        <div className="Recommendation-Container">
           <img
             src={Rekomendasi}
             alt="Rekomendasi"

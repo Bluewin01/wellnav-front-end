@@ -56,7 +56,7 @@
   border: none;
   color: #fff;
 }
-.Landing-Content button:hover {
+.Landing-Content a:hover {
   background-color: #f0dd98;
   color: #000000;
 }

@@ -15,8 +15,6 @@ const FoodCatalog = () => {
     { id: 8, name: "Nama Makanan", detail: "Detail Makanan" },
     { id: 9, name: "Nama Makanan", detail: "Detail Makanan" },
     { id: 10, name: "Nama Makanan", detail: "Detail Makanan" },
-    // { id: 11, name: "Nama Makanan", detail: "Detail Makanan" },
-    // { id: 12, name: "Nama Makanan", detail: "Detail Makanan" },
   ];
 
   return (
@@ -24,7 +22,7 @@ const FoodCatalog = () => {
       {foodItems.map((item) => (
         <div className="FoodCatalog-Column" key={item.id}>
           <div className="Food-Recommendation">
-            <img src={Salad} alt="Salad" className="Salad-img" />
+            <img src={Salad} alt="Salad" className="SaladCatalog-img" />
             <p className="Food-name">{item.name}</p>
             <p className="Food-detail">{item.detail}</p>
             <HeartIcon />

@@ -8,17 +8,15 @@ body,
 
 .Water-Container {
   border-radius: 30px;
-  margin-left: 5vh;
   color: rgb(0, 0, 0);
   flex: 1;
+  margin-left: 5vh;
 }
 
 .Water-Container h1 {
-  margin-left: 10vh;
   margin-bottom: 0px;
 }
 .Water-Container p {
-  margin-left: 10vh;
   margin-top: 5px;
 }
 .Water-content {
@@ -95,13 +93,12 @@ body,
   font-weight: 700;
   margin-bottom: 10px;
   padding-top: 20px;
-  /* padding-left: 2vh; */
+  padding-left: 10vh;
   color: white;
 }
 
 .form-section form input {
   padding: 8px;
-  /* padding-left: 1vh; */
   text-align: left;
   margin-top: 5px;
   margin-left: 40vh;
@@ -135,6 +132,7 @@ body,
 }
 .no-arrows::placeholder {
   color: #ccc;
+  font-size: 15px;
   font-weight: bold;
 }
 .no-arrows::-webkit-outer-spin-button,
@@ -175,7 +173,6 @@ body,
   font-weight: 600;
 }
 .Air-img {
-  /* position: absolute; */
   transform: translate(10%, -15%);
   width: 12vh;
   margin-top: 6vh;
