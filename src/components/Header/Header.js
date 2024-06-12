@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Routes, Route, useNavigate } from "react-router-dom";
+import { Routes, Route, useNavigate, useLocation } from "react-router-dom";
 import { FaSearch } from "react-icons/fa";
 import "./Header.css";
 import Profile from "../../Assets/Profile.png";
@@ -12,6 +12,7 @@ const WaterTracking = () => <div>Water Tracking Page</div>;
 
 const Header = () => {
   const navigate = useNavigate();
+  const location = useLocation();
   const handleSearch = (event) => {
     if (event.key === "Enter") {
       const query = event.target.value.toLowerCase();
@@ -38,10 +39,12 @@ const Header = () => {
         <p>Mari hidup lebih sehat</p>
       </div>
       <div className="Header-Right">
-        <div className="Header-Search">
-          <FaSearch className="Search-Icon" />
-          <input type="text" placeholder="Cari" onKeyDown={handleSearch} />
-        </div>
+        {location.pathname !== "/profile" && ( // Conditionally render the search bar
+          <div className="Header-Search">
+            <FaSearch className="Search-Icon" />
+            <input type="text" placeholder="Cari" onKeyDown={handleSearch} />
+          </div>
+        )}
         <div className="Profile-Icon">
           <img src={Profile} alt="Profile" />
         </div>
