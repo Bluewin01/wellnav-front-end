@@ -5,20 +5,14 @@ import "../ReminderNotification/ReminderNotification.css"; // Make sure you have
 import SearchBar from "../../components/SearchBar/SearchBar";
 import profilePicture from "../../Assets/Salad.png";
 import NotificationContainer from "../../components/NotificationContainer/NotificationContainer";
+import Header from "../../components/Header/Header";
 
 function ReminderNotification() {
   return (
     <div className="App">
       <CollapseSideBar />
-      <div className="top-section">
-        <div className="greeting-section">
-          <h1>Halo, Jane</h1>
-          <p>Rekomendasi makanan untuk anda</p>
-        </div>
-        <div className="search-profile-section">
-          <SearchBar></SearchBar>
-          <img src={profilePicture} className="profile-picture"></img>
-        </div>
+      <div className="header-container">
+        <Header />
       </div>
       <div>
         <NotificationContainer />

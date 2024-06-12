@@ -11,6 +11,7 @@ import {
   decrementCounter,
   setSelectedItems,
 } from "../../../redux/actions";
+import Header from "../../../components/Header/Header";
 
 function NutritionTrackingA() {
   const [activeFilter, setActiveFilter] = useState("All");
@@ -42,15 +43,8 @@ function NutritionTrackingA() {
   return (
     <div className="App">
       <CollapseSideBar />
-      <div className="top-section">
-        <div className="greeting-section">
-          <h1>Halo, Jane</h1>
-          <p>Mari pantau nutrisi anda</p>
-        </div>
-        <div className="search-profile-section">
-          <SearchBar />
-          <img src={profilePicture} className="profile-picture" alt="profile" />
-        </div>
+      <div className="header-container">
+        <Header />
       </div>
       <div className="choose-meal-title">Pilih {mealType} hari ini</div>
       <div className="filter-section">
