@@ -9,6 +9,7 @@ import FoodTaken from "../../../components/FoodTaken/FoodTaken";
 import WarningMessage from "../../../components/WarningMessage/WarningMessage";
 import { useDispatch, useSelector } from "react-redux";
 import chefPicture from "../../../Assets/Rekomendasi.png";
+import Header from "../../../components/Header/Header";
 
 function NutritionTrackingB() {
   const takenCalories = 1500;
@@ -18,17 +19,9 @@ function NutritionTrackingB() {
   return (
     <div className="App">
       <CollapseSideBar />
-      <div className="top-section">
-        <div className="greeting-section">
-          <h1>Halo, Jane</h1>
-          <p>Mari pantau nutrisi anda</p>
-        </div>
-        <div className="search-profile-section">
-          <SearchBar />
-          <img src={profilePicture} className="profile-picture" alt="profile" />
-        </div>
+      <div className="header-container">
+        <Header />
       </div>
-
       <div className="chart-container">
         <img src={chefPicture} className="chef-picture" />
         <CalorieChart

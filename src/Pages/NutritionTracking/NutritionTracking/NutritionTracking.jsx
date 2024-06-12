@@ -7,20 +7,14 @@ import SearchBar from "../../../components/SearchBar/SearchBar";
 import Calendar from "../../../components/Calendar/Calendar";
 import profilePicture from "../../../Assets/Salad.png";
 import DailyMeal from "../../../components/DailyMeal/DailyMeal";
+import Header from "../../../components/Header/Header";
 
 function NutritionTracking() {
   return (
     <div className="App">
       <CollapseSideBar />
-      <div className="top-section">
-        <div className="greeting-section">
-          <h1>Halo, Jane</h1>
-          <p>Rekomendasi makanan untuk anda</p>
-        </div>
-        <div className="search-profile-section">
-          <SearchBar></SearchBar>
-          <img src={profilePicture} className="profile-picture"></img>
-        </div>
+      <div className="header-container">
+        <Header />
       </div>
       <hr className="center-line" />
       <div className="calendar-section">
