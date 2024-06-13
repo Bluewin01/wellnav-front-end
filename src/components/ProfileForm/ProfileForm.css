@@ -35,12 +35,32 @@
   border-radius: 10px;
   padding: 15px 25px;
   flex: 0 0 65%; 
+  height:70px;
+  display: flex;
+  align-items: center;
+}
+
+/* New class for the editing state */
+.Profile-Data.editing {
+  background-color: #D3C77C; /* Change to your desired background color for editing state */
 }
 
 .Profile-Field h1 {
   margin-bottom: 0px;
   font-size: 28px;
 }
+
+/* Styling for the input fields during editing */
+.Profile-Input {
+  background-color: #D3C77C;
+  border: none;
+  padding:0px;
+}
+
+.Profile-Input:focus {
+  outline: none;
+}
+
 
 .edit-profile-button-position{
   display: flex;
