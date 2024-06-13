@@ -17,6 +17,7 @@ import AboutUs from "./Pages/AboutUs/AboutUs";
 import ReminderNotification from "./Pages/ReminderNotification/ReminderNotification";
 import SignUp from "./Pages/SignUp/SignUp";
 import SignIn from "./Pages/SignIn/SignIn";
+import Profile from "./Pages/Profile/Profile";
 
 function App() {
   return (
@@ -44,6 +45,7 @@ function App() {
           />
           <Route path="/sign-up" element={<SignUp />} />
           <Route path="/sign-in" element={<SignIn />} />
+          <Route path="/profile" element={<Profile />} />
         </Routes>
       </Router>
     </div>
