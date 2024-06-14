@@ -1,15 +1,15 @@
 .Profile {
   display: flex;
   flex-direction: column;
-  gap: 20px;
   margin-top:20px;
-  margin-right: 145px;
+  margin-right: 115px;
 }
 
 .Profile-Field {
   display: flex;
   align-items: center;
   justify-content: end;
+  margin-bottom: 20px;
 }
 
 .Profile-Label,
@@ -23,7 +23,7 @@
 .Profile-Label {
   flex: 0 0 25%; 
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
 }
 
 .Profile-Colon {
@@ -34,12 +34,43 @@
   background-color: #F0DD98;
   border-radius: 10px;
   padding: 15px 25px;
-  flex: 0 0 65%; 
+  
+  height:70px;
+  display: flex;
+  align-items: center;
+}
+
+/* New class for the editing state */
+.Profile-Data.editing {
+  background-color: #D3C77C; /* Change to your desired background color for editing state */
 }
 
 .Profile-Field h1 {
   margin-bottom: 0px;
   font-size: 28px;
+}
+
+/* Styling for the input fields during editing */
+.Profile-Input {
+  background-color: #D3C77C;
+  border: none;
+  padding:0px;
+}
+
+.Profile-Input:focus {
+  outline: none;
+}
+
+.field-and-error-msg{
+  flex: 0 0 50%;
+  height:70px;
+
+}
+
+.Profile-Error {
+  color: red;
+  font-size: 16px;
+  align-self: flex-start; /* Align error messages to the start */
 }
 
 .edit-profile-button-position{

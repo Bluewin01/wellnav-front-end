@@ -20,6 +20,7 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
+   
   }
 
   .chart-description{
@@ -29,9 +30,10 @@
   }
 
   .chef-picture{
-    max-width: 600px;
-    position: relative;
-    top: 20px; 
+    max-width: 360px;
+    position: absolute;
+top:-2px;
+left:350px
     /* flex-grow: 1 ; */
     /* transform: translateY(20px);  */
   }
