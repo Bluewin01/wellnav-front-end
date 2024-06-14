@@ -31,7 +31,13 @@ const SignUpForm = () => {
     console.log("Form data", values);
   };
 
-  const healthConditions = ["GERD", "Diabetes", "Asam Urat", "Darah tinggi"];
+  const healthConditions = [
+    "Tidak Ada",
+    "GERD",
+    "Diabetes",
+    "Asam Urat",
+    "Darah tinggi",
+  ];
 
   return (
     <Formik
