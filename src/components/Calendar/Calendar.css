@@ -9,59 +9,15 @@
   padding: 20px;
   font-family: "Marmelad", sans-serif;
 }
+
 .calendar-container {
-  width: 40%;
+  width: 100%;
   display: flex;
-  align-items: center;
-}
-
-.calendar {
-  display: flex;
-  flex-direction: column;
-  padding: 20px 20px 40px 20px;
-  font-family: Arial, sans-serif;
+  justify-content: center;
 }
 
 .month {
-  font-size: 30px;
-  font-weight: bold;
-  margin-bottom: 10px;
-  margin-left: 15px;
-}
-
-.week {
-  display: flex;
-  justify-content: space-between; /* This will distribute the space evenly */
-  gap: 170px; /* This is the key property to create the gap */
-}
-
-.day {
-  display: flex;
-  flex-direction: column;
-  padding-inline: 15px;
-  padding-block: 15px;
-  width: 60px;
-  gap: 20px;
-  /* box-sizing: border-box; */
-}
-
-.day-name {
-  font-size: 24px;
-  margin-bottom: 5px;
-  white-space: nowrap;
-}
-
-.day-number {
-  font-size: 20px;
-  white-space: nowrap;
-}
-
-.current {
-  background-color: #294c2b;
-}
-
-.month {
-  font-size: 24px;
+  font-size: 26px;
   font-weight: bold;
   margin-bottom: 10px;
   margin-left: 15px;
@@ -71,7 +27,7 @@
   display: flex;
   width: 80%;
   justify-content: space-between; /* This will distribute the space evenly */
-  gap: 30px; /* This is the key property to create the gap */
+  gap: 100px; /* This is the key property to create the gap */
 }
 
 .day {
@@ -85,13 +41,13 @@
 }
 
 .day-name {
-  font-size: 16px;
+  font-size: 20px;
   margin-bottom: 5px;
   white-space: nowrap;
 }
 
 .day-number {
-  font-size: 14px;
+  font-size: 20px;
   white-space: nowrap;
 }
 
