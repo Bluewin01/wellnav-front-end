@@ -7,7 +7,7 @@
   justify-content: flex-start;
   margin-bottom: 15px ;
   margin-top: 25px;
-  margin-left:20px;
+  margin-left:60px;
 }
 
 .food-taken-header {
@@ -21,6 +21,7 @@ flex-direction: row;
 flex-wrap: wrap;
 gap:20px;
 margin-bottom: 20px;
+justify-content: center;
 
   }
   
