@@ -11,8 +11,12 @@
     padding: 20px;
     z-index: 9999;
     text-align: center;
-   
+}
 
+.subtract-image{
+    width:25px;
+    transform: translateY(-3px);
+    margin-right: 5px;
 }
 
 .warning-message-container h1 {
@@ -20,7 +24,3 @@
     font-size: 18px;
 }
 
-.warninng-message-container p {
-    margin: 0;
-    font-size: 16px;
-}
