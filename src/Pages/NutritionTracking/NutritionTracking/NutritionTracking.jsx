@@ -13,9 +13,7 @@ function NutritionTracking() {
   return (
     <div className="App">
       <CollapseSideBar />
-      <div className="header-container">
-        <Header />
-      </div>
+      <Header />
       <hr className="center-line" />
       <div className="calendar-section">
         <Calendar />

@@ -43,9 +43,9 @@ function NutritionTrackingA() {
   return (
     <div className="App">
       <CollapseSideBar />
-      <div className="header-container">
-        <Header />
-      </div>
+
+      <Header />
+
       <div className="choose-meal-title">Pilih {mealType} hari ini</div>
       <div className="filter-section">
         {filters.map((filter) => (

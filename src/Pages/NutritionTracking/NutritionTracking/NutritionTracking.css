@@ -4,17 +4,6 @@
   flex-direction: column;
 }
 
-.header-container{
-  margin-left: 15vh;
-}
-
-.header-container p{
-  margin-top:5px;
-}
-
-.header-container h1{
-  margin-bottom: 0px;
-}
 
 .main-content {
   flex: 1;

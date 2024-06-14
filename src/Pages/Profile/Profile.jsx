@@ -11,9 +11,7 @@ function Profile() {
   return (
     <div className="App">
       <CollapseSideBar />
-      <div className="header-container">
-        <Header />
-      </div>
+      <Header />
       <ProfileHeader />
       <ProfileForm />
     </div>

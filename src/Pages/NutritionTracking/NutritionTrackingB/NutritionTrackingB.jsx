@@ -19,9 +19,7 @@ function NutritionTrackingB() {
   return (
     <div className="App">
       <CollapseSideBar />
-      <div className="header-container">
-        <Header />
-      </div>
+      <Header />
       <div className="chart-container">
         <img src={chefPicture} className="chef-picture" />
         <CalorieChart
