@@ -15,7 +15,8 @@
     margin-right: 5px;
   }
   
-  .signup-link a {
+  .signup-link button {
     color: #EF723D;
     text-decoration: none;
+    background-color: white;
   }
