@@ -64,9 +64,15 @@ font-size: 35px;
   margin-right: 5px;
 }
 
-.signin-link a {
+.signin-link button {
   color: #EF723D;
   text-decoration: none;
+  background-color: white;
+}
+
+.link-button{
+  border:none;
+ 
 }
 
 .login-methods {
