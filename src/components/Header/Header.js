@@ -13,6 +13,11 @@ const WaterTracking = () => <div>Water Tracking Page</div>;
 const Header = () => {
   const navigate = useNavigate();
   const location = useLocation();
+
+  const navigateToProfile = () => {
+    navigate("/profile");
+  };
+
   const handleSearch = (event) => {
     if (event.key === "Enter") {
       const query = event.target.value.toLowerCase();
@@ -46,7 +51,7 @@ const Header = () => {
           </div>
         )}
         <div className="Profile-Icon">
-          <img src={Profile} alt="Profile" />
+          <img src={Profile} alt="Profile" onClick={navigateToProfile} />
         </div>
       </div>
     </div>
