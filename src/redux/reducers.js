@@ -4,12 +4,19 @@ import {
   DECREMENT_COUNTER,
   SET_SELECTED_ITEMS,
   SET_MEAL_TYPE,
+  SET_CALORIES,
+  SET_NUTRITION,
 } from "./actionTypes";
 
 const initialState = {
   counter: 0,
   selectedItems: [],
   mealType: null,
+  takenCalories: 0,
+  recommendedCalories: 0,
+  takenCarbohydrates: 0,
+  takenProtein: 0,
+  takenFat: 0,
 };
 
 const rootReducer = (state = initialState, action) => {
@@ -33,6 +40,19 @@ const rootReducer = (state = initialState, action) => {
       return {
         ...state,
         mealType: action.payload,
+      };
+    case SET_CALORIES:
+      return {
+        ...state,
+        takenCalories: action.payload.takenCalories,
+        recommendedCalories: action.payload.recommendedCalories,
+      };
+    case SET_NUTRITION:
+      return {
+        ...state,
+        takenCarbohydrates: action.payload.takenCarbohydrates,
+        takenProtein: action.payload.takenProtein,
+        takenFat: action.payload.takenFat,
       };
     default:
       return state;
